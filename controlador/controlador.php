@@ -405,4 +405,9 @@ function sugerencias(){
 	$datosLibros = cargarLibros();
 	include 'modelo/sugerencias.php';
 }
+
+function controlador_galeria(){
+	$datos = array("titulo"=>"Galeria");
+	include 'vistas/galeria.php';
+}
 ?>
