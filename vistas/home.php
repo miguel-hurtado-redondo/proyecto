@@ -17,9 +17,18 @@ session_start(); ?>
 
 <body>
 	<header>
-		<h1><?php echo $datos['titulo']; ?></h1>
-		<img src="./imagenes/logo.png">
-		<h1> AUTOCASA </h1>
+		
+        <img id="logo" src="./imagenes/logo.png">
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php/galeria">Galeria</a> </li>
+                <li><a href="pagina.php">Quien somos</a></li>
+                <li><a href="dondeEstamos.php">Donde estamos</a></li>
+                <li><a href="ideas.php">Ideas</a></li>
+                <li><a href="contacto.php">Contacto</a> </li>
+            </ul>
+        </nav>
 		<?php
 		//Si existe sesión y o el rol es 1 (Admin), mostramos los botones de administrar
 		if (isset($_SESSION["usuario"]) && (($_SESSION["rol"] == "Admin") || ($_SESSION["rol"] == 1))) {
@@ -34,55 +43,39 @@ session_start(); ?>
 		<?php } ?>
 		<!--Boton para cerrar sesion.-->
 		<?php if (isset($_SESSION["usuario"])) { ?>
-			<input class="botonesHome" type="button" value="Cerrar sesion" name="Logout" onclick="location.href='destruirSesion.php'" />
-			<form action="destruirSesion.php" method="POST">
+			<input class="botonesHome" type="button" value="Cerrar sesion" name="Logout" onclick="location.href='../destruirSesion.php'" />
+			<form id="sesion" action="destruirSesion.php" method="POST">
 				<input class="botonesHome" type="button" value="Administrar mi usuario" name="adminUser" onclick="location.href='index.php/admin_usuarios'" />
 				<input type="submit" name="Logout" value="Cerrar sesión" />
 			</form>
 		<?php } ?>
+	</header>
 
-		<header>
-			<nav>
-				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="index.php/galeria">Galeria</a> </li>
-					<li><a href="pagina.php">Quien somos</a></li>
-					<li><a href="dondeEstamos.php">Donde estamos</a></li>
-					<li><a href="ideas.php">Ideas</a></li>
-					<li><a href="contacto.php">Contacto</a> </li>
-				</ul>
-			</nav>
-			<section>
-				<article>
-					<h2>¿Preparado para pasar unas vacaciones inolvidables?</h2>
-					<h3>Autocaravanas</h3>
-					<p>Una autocaravana es un vehículo automóvil que proporciona los dos medios básicos para viajar: transporte y alojamiento. Las autocaravanas poseen motor y se pueden conducir por la vía pública como un vehículo convencional.
-						Las autocaravanas son el vehículo ideal para viajar en familia o con amigos disfrutando de la naturaleza y permitiéndote desplazarte de un lugar a otro con total comodidad y confort.
-						Su equipamiento es completo con utensilios básicos incluidos como cubertería, toallas y otro mobiliario de exterior.</p>
-				</article>
-				<article id=derecha>
-				<a href="index.php/galeria"><img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana">
-				</article>
-				<article>
-				<a href="index.php/galeria"><img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana">
-				</article>
+	
+	<section>
+	    <h1><?php echo $datos['titulo']; ?></h1>
+		<article>
+			<h2>¿Preparado para pasar unas vacaciones inolvidables?</h2>
+			<h3>Autocaravanas</h3>
+			<p>Una autocaravana es un vehículo automóvil que proporciona los dos medios básicos para viajar: transporte
+				y alojamiento. Las autocaravanas poseen motor y se pueden conducir por la vía pública como un vehículo
+				convencional.
+				Las autocaravanas son el vehículo ideal para viajar en familia o con amigos disfrutando de la naturaleza
+				y permitiéndote desplazarte de un lugar a otro con total comodidad y confort.
+				Su equipamiento es completo con utensilios básicos incluidos como cubertería, toallas y otro mobiliario
+				de exterior.</p>
+		</article>
+		<article id=derecha>
+			<a href="index.php/galeria"><img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana"></a>
+		</article>
+		<article>
+			<a href="index.php/galeria"><img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana"></a>
+		</article>
 
-			</section>
-			<footer>
+	</section>
+	<footer>
 
-			</footer>
-			<div>
-
-
-			</div>
-
-			<br><br>
-
-
-			<br>
-			<br>
-
-
+	</footer>
 </body>
 
 </html>

@@ -18,7 +18,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-main {
+section {
   width: 800px;
   padding: 5px;
   box-sizing: border-box;
@@ -73,7 +73,7 @@ p {
 }
 
 @media (max-width: 800px) {
-  main {
+  section {
     width: 100%;
   }
   header img {

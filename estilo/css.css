@@ -1,4 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway&family=Teko&display=swap');
+*{margin:0;padding:0;}
+   
+html{
+	height: 100%;
+	width: 100%;
+}
+#logo{
+	height: 150%;
+	margin-top: -2.5%;
+	
+}
+header {
+	height: 20%;
+	width: 100%;
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(19%, rgba(255,255,255,1)), color-stop(24%, rgba(246,246,246,1)), color-stop(100%, rgba(60,198,232,1)));
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#3cc6e8', GradientType=1 );
+}
+nav{
+	margin-top: -10%;
+	margin-left: 21%;
+	
+}
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav li{
+    display:inline-block;
+    width:9%;
+    padding:5px 10px;
+    background-color: rgba( 255, 255, 255, 0.1);
+	border:1px solid #000;
+	border-radius: 10px;
+    text-align:center;
+    color: black;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+	}
+	
+/* nav li{
+	float:left;
+	width:10%;
+	padding:5px 10px;
+	background-color:rgba( 255, 255, 255, 0.1);
+	border:1px solid #000;
+	border-radius: 10px;
+	text-align:center;
+	color:black;
+	} */
+
 h1,h2{
 	margin-top: 3%;
 	text-align: center;
@@ -18,7 +77,6 @@ form{
     background-color: #96dae5 ;
     font-family: 'Raleway', sans-serif;
 }
-
 
 form label{
 	width:130px;
@@ -115,3 +173,5 @@ table tr:hover {background-color: #ddd;}
     background-color: #96dae5 ;
     font-family: 'Raleway', sans-serif;
 }
+
+

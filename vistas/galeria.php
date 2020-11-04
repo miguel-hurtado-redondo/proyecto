@@ -18,10 +18,10 @@ session_start(); ?>
 
 </head>
 
-<body class="elo">
+<body>
 	<header>
 		<h1><?php echo $datos['titulo']; ?></h1>
-		<img src="../imagenes/logo.png">
+		<a href="../index.php"><img src="../imagenes/logo.png"></a>
 		<h1> GALERIA </h1>
 		<?php
 		//Si existe sesión y o el rol es 1 (Admin), mostramos los botones de administrar
@@ -37,12 +37,11 @@ session_start(); ?>
 		<?php } ?>
 		<!--Boton para cerrar sesion.-->
 		<?php if (isset($_SESSION["usuario"])) { ?>
-			<form action="destruirSesion.php" method="POST">
+			<form action="../destruirSesion.php" method="POST">
 				<input class="botonesHome" type="button" value="Administrar mi usuario" name="adminUser" onclick="location.href='index.php/admin_usuarios'" />
 				<input type="submit" name="Logout" value="Cerrar sesión" />
 			</form>
-
-			<header>
+	</header>
 				<nav>
 					<ul>
 						<li><a href="../index.php">Home</a></li>
@@ -53,7 +52,7 @@ session_start(); ?>
 						<li><a href="../contacto.php">Contacto</a> </li>
 					</ul>
 				</nav>
-				<main>
+				<section>
 					<h2>Ford 294TL</h2>
 					<br><br>
 					<img src="../imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Modelo y Distribucion">
@@ -84,11 +83,12 @@ session_start(); ?>
 						<img src="../imagenes/autocaravana_279_fiat/IMG_20190412_104015_831-773x1030.jpg" alt="Cocina" data-subtext="Cocina" data-alt="Cocina">
 						<img src="../imagenes/autocaravana_279_fiat/IMG_20190412_105549_531-773x1030.jpg" alt="Comedor" data-subtext="Comedor">
 						<img src="../imagenes/autocaravana_279_fiat/Kronos2029020M2018_a900x9001-687x1030.jpg" alt="Baño" data-subtext="Baño">
-						<img src="../imagenes/autocaravana_279_fiat/Kronos-279-2.jpg" alt="Exterior" data-subtext="Exterior">
 						<img src="../imagenes/autocaravana_279_fiat/Roller-Team-Kronos-279M18-1079x8091.jpg" alt="Conductor" data-subtext="Conductor">
+						<img src="../imagenes/autocaravana_279_fiat/Kronos-279-2.jpg" alt="Exterior" data-subtext="Exterior">
+						
 					</div>
 
-				</main>
+				</section>
 				<script src="../js/hes-gallery.js"></script>
 				<script>
 					HesGallery.setOptions({
@@ -105,11 +105,11 @@ session_start(); ?>
 
 					</article>
 					<!-- <article id=derecha>
-				<img src="../imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana">
-			</article>
-			<article>
-				<img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana">
-			</article> -->
+					<img src="../imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana">
+					</article>
+					<article>
+					<img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana">
+					</article> -->
 
 				</section>
 				<footer>
@@ -132,8 +132,8 @@ session_start(); ?>
 </html>
 <?php } else {
 			echo "<script>alert('REGISTRATE');</script>" ?>
-	<h1> NECESITAS ESTAR REGISTRADO PARA PODER VISUALIZAR LAS FOTOGRAFIAS.
-		POR FAVOR
+	<h1> NECESITAS ESTAR REGISTRADO PARA PODER VISUALIZAR LA GALERIA.
+		POR FAVOR, REGISTRESE O LOGUESE
 	</h1>
 
 <?php } ?>
