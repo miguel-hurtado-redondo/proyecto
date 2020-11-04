@@ -43,11 +43,11 @@ session_start(); ?>
 		<?php } ?>
 		<!--Boton para cerrar sesion.-->
 		<?php if (isset($_SESSION["usuario"])) { ?>
-			<input class="botonesHome" type="button" value="Cerrar sesion" name="Logout" onclick="location.href='../destruirSesion.php'" />
-			<form id="sesion" action="destruirSesion.php" method="POST">
+			<input class="botonesHome" type="button" value="Cerrar sesión" name="Logout" onclick="location.href='destruirSesion.php'" />
+			<!-- <form id="sesion" action="destruirSesion.php" method="POST">
 				<input class="botonesHome" type="button" value="Administrar mi usuario" name="adminUser" onclick="location.href='index.php/admin_usuarios'" />
 				<input type="submit" name="Logout" value="Cerrar sesión" />
-			</form>
+			</form> -->
 		<?php } ?>
 	</header>
 
