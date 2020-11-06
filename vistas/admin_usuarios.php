@@ -15,7 +15,7 @@
 		<td>Rol (Admin=1 / Usuario=0)</td>
 		<td>Acción</td>
 	</tr>
-
+	<br><br><br>
 	<?php
 		foreach($usuarios as $usuario):
 		
@@ -78,19 +78,14 @@
 
 </form>
 
-
-
 <?php } else { ?>
-
-	
-    
+  
 		<form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>"> 
             <input type="submit" name="creaUsuario" value="Crear Usuario"/>
-
+			<input type="button" value="Home" name="volverInicio" onclick="location.href='../index.php'"/>
 		</form>
-        <div class="botonesFuera">
+        <!-- <div class="botonesFuera">
         <input type="submit" name="volverInicio"  value="Home" onclick="location.href='../index.php'"/>
-    </div>
-        
-	
+    </div> -->
+        	
 <?php } ?>

@@ -1,11 +1,11 @@
-body {
+ /* body {
   box-sizing: border-box;
   font-family: Arial;
   margin: 0;
   background-color: #ddd;
   height: 100vh;
-}
-
+} */
+/*
 header {
   background-color: white;
   padding: 20px;
@@ -16,9 +16,9 @@ header h1 {
   color: #481212;
   font-weight: 300;
   margin-bottom: 10px;
-}
+} */
 
-section {
+.galeriabox {
   width: 800px;
   padding: 5px;
   box-sizing: border-box;

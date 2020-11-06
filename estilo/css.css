@@ -27,15 +27,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 nav{
 	position: absolute;
-	margin-top: 4%;
-	margin-left: 22%;
+	margin-top: 4.2%;
+	margin-left: 23%;
 	width: 72%;
 }
 nav li{
 
     display:inline-block;
 	width:10%;
-	padding: 0.4% 2%;
+	padding: 0.7% 2%;
     background-color: rgba( 255, 255, 255, 0.1);
 	border:1px solid #000;
 	border-radius: 10px;
@@ -62,25 +62,27 @@ nav a{
 	color:black;
 	} */
 
+
 .botonesHome{
-	position: relative;
+	position:relative ;
 	font-size: 12px;
 	margin-right: revert;
-	float: right;
-	margin-top: 12%;
+	float: right; 
+	margin-top: 0.3%;
+	margin-right: 1%;
+	font-family: 'Raleway', sans-serif;
+	width:11%;
+	padding:0.8%;
+	border:1px solid #55767c;
+	border-radius:10px;
+	display:block;
+	color:#fff;
+    background-color:#55767c;
+	text-decoration: none;
+	
 }
 
-#sension {
-	position: relative;
-	width:400px;
-	padding:16px;
-    border-radius:10px;
-    border: solid 3px #04a1ba;
-	margin:auto;
-    background-color: #96dae5 ;
-    font-family: 'Raleway', sans-serif;
-}
-/* form{
+/* #sension {
 	position: relative;
 	width:400px;
 	padding:16px;
@@ -90,26 +92,26 @@ nav a{
     background-color: #96dae5 ;
     font-family: 'Raleway', sans-serif;
 } */
-
-/* h1,h2{
-	margin-top: 3%;
-	text-align: center;
-}
-a{
-	text-decoration: none;
-}	
-p{
-	font-family: 'Raleway', sans-serif;
-}	
 form{
-	width:400px;
-	padding:16px;
+	position: relative;
+	width:32%;
+	padding:1%;
     border-radius:10px;
     border: solid 3px #04a1ba;
 	margin:auto;
     background-color: #96dae5 ;
-    font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 4%;
 }
+
+ h1,h2{
+	margin-top: 5%;
+	text-align: center;
+}
+	
+p{
+	font-family: 'Raleway', sans-serif;
+}	
 
 form label{
 	width:130px;
@@ -126,10 +128,10 @@ form input[type="text"], form input[type="password"], form input[type="email"]{
 	margin:8px 0;
 	display:inline-block;
 }
-input[type="button"], input[type="submit"], form input[type="submit"]{
+input[type="submit"], form input[type="submit"],form input[type="button"],a input[type="button"] {
 	width:30%;
 	padding:8px 8px;
-	margin-left: 0.4%;
+	margin-left: 33%;
 	margin-top:15px;
 	border:1px solid #d34712;
 	border-radius:10px;
@@ -143,7 +145,7 @@ form input[type="submit"]:hover{
 	cursor:pointer;
 }
 
-input[type="button"]{
+/* input[type="button"]{
 
     font-family: 'Raleway', sans-serif;
 	width:10%;
@@ -156,9 +158,10 @@ input[type="button"]{
 	color:#fff;
     background-color:#55767c;
     text-decoration: none;
-}
+} */
 
 table{
+	background-color:#3cc6e8;
 	padding:16px;
     border: solid 1px#55767c;
 	margin:auto;
@@ -173,8 +176,9 @@ table td, table tr{
 
     padding: 8px;
 }
-table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even){background-color: #96DAE5;}
 table tr:hover {background-color: #ddd;}
+/*
 #header tr {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -182,6 +186,8 @@ table tr:hover {background-color: #ddd;}
     font-size: 20px;
     color: #040562;
 }
+*/
+/*
 .botonesFuera{
 
 	width:400px;
@@ -191,10 +197,9 @@ table tr:hover {background-color: #ddd;}
 	margin:auto ;
     background-color: #96dae5 ;
 	font-family: 'Raleway', sans-serif;
-}
-.botonesHome{
-	font-size: 12px;
-}
+}*/
+
+/*
 #botonesAdminUser{
 	width:400px;
 	padding:16px;
