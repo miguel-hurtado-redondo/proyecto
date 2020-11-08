@@ -22,7 +22,7 @@ session_start(); ?>
 				<a href="../index.php"><li>Home</li></a>
 				<a href="../index.php/galeria"><li>Galeria</li></a>
 				<a href="../index.php/quienSomos"><li>Quien somos</li></a>
-				<a href="../index.php/dondeEstamos"><li>Donde estamos</li></a>
+				<a href="../index.php/tarifas"><li>Tarifas</li></a>
 				<a href="../index.php/ideas"><li>Ideas</li></a>
 				<a href="../index.php/contacto"><li>Contacto</li></a>
 			</ul>

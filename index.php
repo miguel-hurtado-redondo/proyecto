@@ -37,6 +37,10 @@ if ($URI == '/index.php'){
 	// Se ejecuta el contacto
 	controlador_contacto();
 	
+}elseif ($URI == '/index.php/tarifas') {
+	// Se ejecuta el contacto
+	controlador_tarifas();
+	
 }else {
 	//Si no esta la $URI se lanza error que no existe.
 	header('Status: 404 Not found');

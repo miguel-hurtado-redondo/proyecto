@@ -426,5 +426,13 @@ function controlador_contacto(){
 	$datos = array("titulo"=>"CONTACTO");
 	include 'vistas/contacto.php';
 }
+/**
+* creamos una funcion controlador_tarifas para controlarlas.
+* @author Miguel Hurtado
+*/
+function controlador_tarifas(){
+	$datos = array("titulo"=>"TARIFAS");
+	include 'vistas/tarifas.php';
+}
 
 ?>

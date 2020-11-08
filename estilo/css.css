@@ -260,6 +260,60 @@ table td, table tr{
 }
 table tr:nth-child(even){background-color: #96DAE5;}
 table tr:hover {background-color: #ddd;}
+
+
+.tarifaHorizontal{
+	background-color: #e0a332 ;
+	color:white;
+	list-style: none;
+	text-align: center;
+	padding: 8%;
+	width: 100%;
+}
+
+.tarifaVertical{
+	background-color: #44576c;
+	color:white;
+	list-style: none;
+	text-align: center;
+	padding: 8%;
+	width: 100%;
+}
+
+.tarifaTabla{
+	background-color: #719430;
+	color:white;
+	list-style: none;
+	text-align: center;
+	padding: 8%;
+	width: 100%;
+}
+
+.tarifas{
+	
+    float: left;
+   	width: 13%;
+	margin: 1%;	
+}
+
+.tarifaIzquierda{
+	width: 75%;
+	height:24%;
+	margin-left: 21%;
+	margin-top:8%;
+	
+}
+.tarifaDerecha{
+
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5%;
+}
+.tarifaTemporadas{
+	color: #e0a332;
+	margin-bottom: 4% ;
+}
+
 /*
 #header tr {
     padding-top: 12px;

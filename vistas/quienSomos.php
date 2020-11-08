@@ -22,7 +22,7 @@ session_start(); ?>
 				<a href="../index.php"><li>Home</li></a>
 				<a href="../index.php/galeria"><li>Galeria</li></a>
 				<a href="../index.php/quienSomos"><li>Quien somos</li></a>
-				<a href="../index.php/dondeEstamos"><li>Donde estamos</li></a>
+				<a href="../index.php/tarifas"><li>Tarifas</li></a>
 				<a href="../index.php/ideas"><li>Ideas</li></a>
 				<a href="../index.php/contacto"><li>Contacto</li></a>
 			</ul>
@@ -82,7 +82,7 @@ session_start(); ?>
 				alquilar una autocaravana que parecerá que la estás estrenando, y con muy poco kilometraje a pesar de los largos viajes que hacen nuestros clientes.<br>
 
 
-				<span>¿Quieres conocer nuestra flota?</span> visita nuestra <a href="../index.php/galeria">GALERIA</a> y ver <a href="../index.php/precios">PRECIOS</a>.
+				<span>¿Quieres conocer nuestra flota?</span> visita nuestra <a href="../index.php/galeria"><strong>GALERIA</strong></a> y ver <a href="../index.php/tarifas"><strong>TARIFAS</strong></a>.
 			</p>
 		</article>
 
