@@ -132,33 +132,6 @@ $datos = ["titulo"=>"Página de administración de usuarios"];
 
 /**
 * 
-* Función para administrar los libros y autores que se le mostrará solo al administrador
-* @author Miguel Hurtado
-* @var string
-* 
-*/
-function controlador_admin_libros(){
-//Iniciamos o restauramos sesion.
-session_start(); 
-
-$datos = ["titulo"=>"Página de administración de libros"];
-
-	//comprobamos que la sesion rol se haya mandando.
-	if(isset($_SESSION["rol"])){
-		// Si es rol administrador 1 (admin), mostramos todos los autores y libros
-		if($_SESSION["rol"] = 1){
-			$librosAutor = cargarLibros_autores();
-			include 'vistas/admin_libros.php';
-		} else { //En caso de ser un usuario no administrador 0 (Usuario), se indicará un error.
-			echo "<script>alert('No puedes acceder, no eres administrador.');</script>"; 
-		}
-	} else { //En caso de que el rol no se haya mandado, se mostrara un error.
-		echo "<script>alert('No puedes acceder, no has iniciado sesión');</script>"; 
-	}
-}
-
-/**
-* 
 * Creamos una nueva función controlador_registro_admin() 
 * @author Miguel Hurtado
 * @var string
@@ -202,45 +175,6 @@ function controlador_registro_admin(){
 		}		
 	}
 	
-	//Aqui vamos a recoger lo que viene por POST lo descomponemos, comprobaremos que el libro modificado no existe y si todo es correcto, volvemos a crear una array con los datos modificados, para luego poder meterla en la bd desde la funcion del modelo mas facilmente.
-	if(isset($_POST["actualizarEnBDLibro"])){
-		$id = $_POST["id"];
-		$titulo = $_POST["titulo"];
-		$f_publicacion = $_POST["f_publicacion"];
-		$autorObtenido = $_POST["listaAutores"];
-				
-		$datosLibroModificado = array("id" => "$id", "titulo" => "$titulo", "f_publicacion" => "$f_publicacion", "autor" => "$autorObtenido");
-		if(!existeLibro($titulo, $autorObtenido)){
-			if(modificarLibro($datosLibroModificado)){
-				echo "<h1>La modificacion del libro se ha realizado correctamente</h1>";
-				?>
-				<input type="submit" name="volverAdminLibros" value="Administrar libros" onclick="location.href='../index.php/admin_libros'"/>
-				<?php
-			} 	
-		} else {
-			echo "<h1>El libro $titulo de este autor ya existe en la BD</h1>";?>
-			<input type="submit" name="volverAdminLibros" value="Administrar libros" onclick="location.href='../index.php/admin_libros'"/>
-		<?php
-		}	
-	}
-	
-	//Aqui vamos a recoger lo que viene por POST lo descomponemos, y creamos un array con los datos modificados, para luego poder meterla en la bd desde la funcion del modelo mas facilmente.
-	if(isset($_POST["actualizarEnBDAutor"])){
-		$id = $_POST["id"];
-		$nombre = $_POST["nombre"];
-		$apellidos = $_POST["apellidos"];
-		$nacionalidad = $_POST["nacionalidad"];
-		
-		$datosAutorModificado = array("id" => "$id", "nombre" => "$nombre", "apellidos" => "$apellidos", "nacionalidad" => "$nacionalidad");
-
-		if(modificarAutor($datosAutorModificado)){
-			echo "<h1>La modificacion del Autor se ha realizado correctamente</h1>";
-			?>
-			<input type="submit" name="volverAdminLibros" value="Administrar libros" onclick="location.href='../index.php/admin_libros'"/>
-			<?php
-		} 	
-	}
-
 	//Guardaremos en variables lo que nos envia datos de usuario actualiza.php
 	if(isset($_GET["actualizar"])){
 			$id = $_GET["id"];
@@ -254,120 +188,17 @@ function controlador_registro_admin(){
 
 	}
 	
-	//Guardaremos en variables lo que nos envia actualizaLibro.php
-	if(isset($_GET["actualizarLibro"])){
-			$idLibro = $_GET["id"];
-			$titulo = $_GET["titulo"];
-			$f_publicacion = $_GET["f_publicacion"];
-			$nombre_autor = $_GET["nombre_autor"];
-
-			$cargarAutores = cargarAutores();
-			
-			include 'vistas/actualizarLibro.php';
-
-	}
-	
-	//Guardaremos en variables lo que nos envia actualizaAutor.php
-	if(isset($_GET["actualizarAutor"])){
-			$idAutor = $_GET["id"];
-			$nombre = $_GET["nombre"];
-			$apellidos = $_GET["apellidos"];
-			$nacionalidad = $_GET["nacionalidad"];
-			
-			$cargarAutores = cargarAutores();
-			
-			include 'vistas/actualizarAutor.php';
-
-	}
-	
 	//Guardaremos en variables lo que nos envia eliminar usuario y libro
 	if (isset($_GET["eliminar"])){
 		$usuario = $_GET["usuario"];
-		$idLibro = $_GET["id"];
 		
 		//Si el usuario se ha pulsado se eliminar un usuario
 		if(isset($usuario)){
 			if(eliminar_usuario($usuario)){
 				header("location:../index.php/admin_usuarios");
 			}
-		//Si el idLibro se ha pulsado se eliminar el libro
-		} elseif(isset($idLibro)){
-			if(eliminar_libro($idLibro)){
-				header("location:../index.php/admin_libros");
-			}
-		}
-	}
-	
-	//Guardamos en variables los datos eliminar del autor
-	if (isset($_GET["eliminarAutor"])){
-		$idAutor = $_GET["id"];
-		if(isset($idAutor)){
-			if(eliminar_autor($idAutor)){
-				header("location:../index.php/admin_libros");
-			} else {
-				echo "<h1>Debes eliminar sus libros, para borrar al autor</h1>";
-				?>
-				<input type="submit" name="volverAdminLibros" value="Administrar libros" onclick="location.href='../index.php/admin_libros'"/>
-				<?php		
-			}
-		}
-	}
-	
-	//Guardaremos en variables lo que nos envia registrar el libro
-	if(isset($_POST['registroLibro'])){
-		
-		$titulo = $_POST["titulo"];
-		$f_publicacion = $_POST["f_publicacion"];
-		$autor = $_POST["listaAutores"];
-		
-		if($titulo != ""){
-		
-			if(!existeLibro($titulo, $autor)){
-				$datosLibro = array("titulo" => "$titulo", "f_publicacion" => "$f_publicacion", "autor" => "$autor");
-				if(crearLibro($datosLibro)){
-					echo "<h1>El libro se ha registrado correctamente</h1>";
-				}
-			} else {
-				echo "<h1>El libro $titulo para este autor ya existe en BD</h1>";
-			}
-		} else { 
-			echo "<h1>Debes de introducir un titulo obligatoriamente</h1>";
-		}
-		
-		?>
-				<input type="submit" name="volverAdminLibros" value="Administrar libros" onclick="location.href='../index.php/admin_libros'"/>
-			<?php
-
-	}
-	
-	//Guardaremos en variables lo que nos envia registrar autor
-	if(isset($_POST['registroAutor'])){
-				
-		$nombre = $_POST["nombre"];
-		$apellidos = $_POST["apellidos"];
-		$nacionalidad = $_POST["nacionalidad"];
-		
-		if($nombre != ""){
-		
-			if(!existeAutor($nombre)){
-				$datos_autor = array("nombre" => "$nombre", "apellidos" => "$apellidos", "nacionalidad" => "$nacionalidad");
-				if(crearAutor($datos_autor)){
-					echo "<h1>El Autor ha sido registrado correctamente</h1>";
-				}
-			} else {
-				// Si el usuario existe, mostramos un mensaje indicandolo.
-				echo "<h1>El autor $nombre ya esta creado en la BD</h1>";
-			}
-		} else { //En principio aquí no entrará nunca debido a que el campo nombre es requerido
-			echo "<h1>El nombre es obligatorio</h1>";
-		}
-		
-		?>
-				<input type="submit" name="volverAdminLibros" value="Administrar libros" onclick="location.href='../index.php/admin_libros'"/>
-			<?php
-
-	}
-	
+		} 
+	}	
 	//Guardaremos en variables lo que nos envia registrar el usuarios desde administracion.
 	if(isset($_POST['registroAdmin'])){
 		$usuario = $_POST["usuario"];

@@ -21,24 +21,21 @@ if ($URI == '/index.php'){
 } elseif ($URI == '/index.php/admin_usuarios') {
 	// Se ejecuta el controlador de administrar usuarios
 	controlador_admin_usuarios();
-} elseif ($URI == '/index.php/admin_libros') {
-	// Se ejecuta el controlador de la administrar libros
-	controlador_admin_libros();
-} elseif ($URI == '/index.php/controlAdmin') {
+}elseif ($URI == '/index.php/controlAdmin') {
 	// Se ejecuta el controlador registro admin
 	controlador_registro_admin();
 }elseif ($URI == '/index.php/galeria') {
-	// Se ejecuta el galeria
+	// Se ejecuta el controlador galeria
 	controlador_galeria();
 }elseif ($URI == '/index.php/quienSomos') {
-	// Se ejecuta el quienSomos
+	// Se ejecuta el controlador quienSomos
 	controlador_quienSomos();
 } elseif ($URI == '/index.php/contacto') {
-	// Se ejecuta el contacto
+	// Se ejecuta el controlador contacto
 	controlador_contacto();
 	
 }elseif ($URI == '/index.php/tarifas') {
-	// Se ejecuta el contacto
+	// Se ejecuta el controlador tarifas
 	controlador_tarifas();
 	
 }else {
