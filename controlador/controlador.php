@@ -11,7 +11,9 @@
 */
 function controlador_index(){
 	$datos = array("titulo"=>"AUTOCASA");
+	include 'vistas/cabecera.php';
 	include 'vistas/home.php';
+	
 }
 
 /**
@@ -396,18 +398,33 @@ function controlador_registro_admin(){
 	}
 }
 
+
+
 /**
-* creamos una funcion sugerencias para controlarlas.
+* creamos una funcion controlador_galeria para controlarlas.
 * @author Miguel Hurtado
 */
-function sugerencias(){
-
-	$datosLibros = cargarLibros();
-	include 'modelo/sugerencias.php';
-}
-
 function controlador_galeria(){
-	$datos = array("titulo"=>"Galeria");
+	$datos = array("titulo"=>"GALERIA");
 	include 'vistas/galeria.php';
 }
+
+/**
+* creamos una funcion controlador_quienSomos para controlarlas.
+* @author Miguel Hurtado
+*/
+function controlador_quienSomos(){
+	$datos = array("titulo"=>"QUIEN SOMOS");
+	include 'vistas/quienSomos.php';
+}
+
+/**
+* creamos una funcion controlador_contacto para controlarlas.
+* @author Miguel Hurtado
+*/
+function controlador_contacto(){
+	$datos = array("titulo"=>"CONTACTO");
+	include 'vistas/contacto.php';
+}
+
 ?>

@@ -26,15 +26,18 @@ if ($URI == '/index.php'){
 	controlador_admin_libros();
 } elseif ($URI == '/index.php/controlAdmin') {
 	// Se ejecuta el controlador registro admin
-	controlador_registro_admin();}
-//  elseif ($URI == '/index.php/sugerencias') {
-// 	// Se ejecuta el controlador para ajax
-// 	sugerencias();
-elseif ($URI == '/index.php/galeria') {
+	controlador_registro_admin();
+}elseif ($URI == '/index.php/galeria') {
 	// Se ejecuta el galeria
 	controlador_galeria();
+}elseif ($URI == '/index.php/quienSomos') {
+	// Se ejecuta el quienSomos
+	controlador_quienSomos();
+} elseif ($URI == '/index.php/contacto') {
+	// Se ejecuta el contacto
+	controlador_contacto();
 	
-} else {
+}else {
 	//Si no esta la $URI se lanza error que no existe.
 	header('Status: 404 Not found');
 	echo '<h1>La página ' .  $URI . ' no existe</h1>';
