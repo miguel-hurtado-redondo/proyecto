@@ -265,5 +265,12 @@ function controlador_tarifas(){
 	$datos = array("titulo"=>"TARIFAS");
 	include 'vistas/tarifas.php';
 }
-
+/**
+* creamos una funcion controlador_ideas para controlarlas.
+* @author Miguel Hurtado
+*/
+function controlador_ideas(){
+	$datos = array("titulo"=>"IDEAS");
+	include 'vistas/ideas.php';
+}
 ?>

@@ -38,6 +38,10 @@ if ($URI == '/index.php'){
 	// Se ejecuta el controlador tarifas
 	controlador_tarifas();
 	
+}elseif ($URI == '/index.php/ideas') {
+	// Se ejecuta el controlador ideas
+	controlador_ideas();
+	
 }else {
 	//Si no esta la $URI se lanza error que no existe.
 	header('Status: 404 Not found');

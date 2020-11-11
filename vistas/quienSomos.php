@@ -51,9 +51,9 @@ session_start(); ?>
 
 			<h2>ALQUILER DE AUTOCARAVANAS EN GRANADA</h2>
 			<br><br>
-			<p><span>Te damos la posibilidad de viajar en familia con tu autocaravana ¡Estamos en Granada!</span>
+			<h3><span>Te damos la posibilidad de viajar en familia con tu autocaravana ¡Estamos en Granada!</span></h3><br><br>
 
-				<span>Autocaravanas <strong>AUTOCASA</strong></span> te ofrece una flota de autocaravanas en alquiler para que elijas la que mejor
+				<p><span>Autocaravanas <strong>AUTOCASA</strong></span> te ofrece una flota de autocaravanas en alquiler para que elijas la que mejor
 				se adapta a tus necesidades según el número de personas que vayan a viajar, y el espacio que necesitarás.<br><br><br>
 
 				<span>¿Por qué alquilar tu autocaravana?</span> <br><br><br>
@@ -70,15 +70,15 @@ session_start(); ?>
 				Hay varias razones por las cuales creemos sinceramente que Autocaravanas <strong>AUTOCASA</strong> es la mejor opción para el alquiler
 				de autocaravanas, vamos con ellas:<br><br><br>
 
-				Variedad, contamos con un buen número de autocaravanas de diferentes modelos y características, pero todas de
-				grandes marcas como Fiat o Citroen, con todas las comodidades posibles.
-				Precio, sabemos que buscas la mejor relación calidad precio del mercado, y nosotros nos hemos empeñado en que no
+				<strong>Variedad,</strong> contamos con un buen número de autocaravanas de diferentes modelos y características, pero todas de
+				grandes marcas como Fiat o Citroen, con todas las comodidades posibles.<br>
+				<strong>Precio,</strong> sabemos que buscas la mejor relación calidad precio del mercado, y nosotros nos hemos empeñado en que no
 				busques más después de encontrarnos. Tenemos muy buenos precios en alquiler de autocaravanas, ofertas en temporadas
-				bajas, etc.. En precio somos diferenciales.
-				Satisfacción, nuestros clientes siempre quedan satisfechos, y destacan el trato que les brindamos y la calidad de las
-				autocaravanas. En Google Mybusiness contamos con numerosas opiniones reales de clientes que describen a la perfección nuestro
-				servicio -> ver las opiniones de los clientes en Google.
-				Autocaravanas semi-nuevas siempre, cambiamos nuestras autocaravanas cada dos años, por lo tanto, siempre tendrás la garantía de
+				bajas, etc.. En precio somos diferenciales.<br>
+				<strong>Satisfacción,</strong> nuestros clientes siempre quedan satisfechos, y destacan el trato que les brindamos y la calidad de las
+				autocaravanas. En Google Mybusiness contamos con numerosas opiniones de clientes que describen a la perfección nuestro
+				servicio.
+				<strong>Autocaravanas semi-nuevas,</strong> cambiamos nuestras autocaravanas cada dos años, por lo tanto, siempre tendrás la garantía de
 				alquilar una autocaravana que parecerá que la estás estrenando, y con muy poco kilometraje a pesar de los largos viajes que hacen nuestros clientes.<br>
 
 

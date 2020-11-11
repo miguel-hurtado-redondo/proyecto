@@ -1,16 +1,16 @@
 <?php
-//localhost:
+// //localhost:
 $serverName = "localhost";
 $userName = "root";
 $password = "a";
-$dataBase = "tgdwes";
+$dataBase = "proyecto";
 
-/* //migue.byethost5.com/
-$servername = "sql308.byethost.com";
-$username = "b5_24775313";
-$password = "peligros";
-$database = "b5_24775313_tgdwes";
-*/
+//migue.byethost5.com/
+// $serverName = "sql308.byethost5.com";
+// $userName = "b5_24775313";
+// $password = "peligros";
+// $dataBase = "b5_24775313_proyecto";
+
 	//Establecemos conexión con la base de datos
 	$mysqli = @new mysqli($serverName, $userName, $password, $dataBase);
 	
