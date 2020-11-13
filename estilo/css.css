@@ -104,6 +104,9 @@ nav a{
 	height: auto;
 	margin-bottom: 5%;
 }
+.fotosHome{
+	width: 100%;
+}
 .contacto{
 	position: relative;
 	top: -7%;
@@ -314,7 +317,41 @@ table tr:hover {background-color: #ddd;}
 	margin-bottom: 4% ;
 }
 .sitios{
-	column-count: 2;
+	/* column-count: 2; */
+	/* float: left; */
+	-moz-column-count: 2; /* Para Firefox */
+	-webkit-column-count: 2; /* Para Opera, Chrome, Safari */
+	column-count: 2;  /*Con esto lo que hacemos es crear dos coumnas */
+	text-align: center;  /* Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+}
+.imagenSitios{
+
+	
+	width: 85%;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-bottom: 20%;
+	/* float: left; */
+}
+
+.textoSitios{
+
+	width: 90%;
+	text-align: inherit;
+	padding-top:7%;
+	line-height: 1.5;
+
+	/* float: left; */
+
+}
+.textoSitios1{
+
+	width: 90%;
+	text-align: inherit;
+	padding-top: 18%;
+	line-height: 1.5;
+	/* float: left; */
+
 }
 /*
 #header tr {
@@ -346,5 +383,104 @@ table tr:hover {background-color: #ddd;}
     background-color: #96dae5 ;
     font-family: 'Raleway', sans-serif;
 } */
+@media screen and (max-width: 599px) {
+    /* .textGroup {
+        margin-top: 20px;
+    }
+    .imgSize {
+        width: 60%
+    }
+    .imge {
+        width: 60%;  
+               
+	} */
+	.columnas{	
+		column-count: 1;
+	}
+    .sitios {
+    -moz-column-count: 1; /* Para Firefox */
+    -webkit-column-count: 1; /* Para Opera, Chrome, Safari */
+    column-count: 1; /*Con esto lo que hacemos es crear dos coumnas */
+    text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+	}
+	.imagenSitios{
+		height: 85%;
+		width: 85%;
+		margin-left: -1%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	
+	}
+	
+	.textoSitios, .textoSitios1{
+		
+		width: 90%;
+		text-align: justify;
+		margin-left: 6%;
+		margin-bottom: 10%;
+	
+	}
+	iframe{
+		width: 319%;
+	}
+	.derecha{
+		width: 95%;
+		margin-top: 30%;
+		margin-left: 3%;
+	}
+	.contacto {
+		position: relative;
+		top: -7%;
+		z-index: -1;
+		width: 92%;
+		height: auto;
+		padding: 5px;
+		box-sizing: border-box;
+		margin-left: 4%;
+		background-color: #eee;
+    /* .fotos{
+    height: auto;
+    } */
+}
+@media screen and (min-width: 600px) {
 
-
+	/*.sitios {*/
+		/*-moz-column-count: 1;*/ /* Para Firefox */
+		/*-webkit-column-count: 1;*/ /* Para Opera, Chrome, Safari */
+		/*column-count: 1;*/ /*Con esto lo que hacemos es crear dos coumnas */
+		/*text-align: center;*/ /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+		/*}*/
+		/* .imagenSitios{
+			height: 85%;
+			width: 85%;
+			margin-left: 2%;
+			margin-bottom: 20%;
+								 float: left; 
+		} */
+		
+		/* .textoSitios{
+			background-color: red;
+			width: 90%;
+			text-align: inherit;
+			margin-left: 6%;
+		
+		} */
+    /* .column {
+        float: left;
+        width: 50%;
+    }
+    .textGroup {
+        margin-left: 80px;
+    }
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .imgSize {
+        width: 30%
+    }
+    .imge {
+        width: 40%
+    }   */
+} 

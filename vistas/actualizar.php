@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image / x-icon" href="/proyecto/favicon.ico">
 		<title>Actualizar</title>
 		<style>
 			@import url("../estilo/css.css");

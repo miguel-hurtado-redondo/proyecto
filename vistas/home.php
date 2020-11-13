@@ -16,9 +16,9 @@
 				de exterior.</p><br><br>
 		</article>
 		<article class="columnas">
-			<a href="index.php/galeria"><img src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana"></a>
+			<a  href="index.php/galeria"><img  class="fotosHome" src="imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Foto de la caravana"></a>
 
-			<a href="index.php/galeria"><img src="imagenes/autocaravana_279_fiat/composicion-caravana-kronos-279m-fiat.jpg" alt="Foto de la caravana"></a><br><br>
+			<a  href="index.php/galeria"><img class="fotosHome" src="imagenes/autocaravana_279_fiat/composicion-caravana-kronos-279m-fiat.jpg" alt="Foto de la caravana"></a><br><br>
 		</article>
 
 	</section>

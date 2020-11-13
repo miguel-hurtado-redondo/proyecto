@@ -123,7 +123,7 @@ $datos = ["titulo"=>"Página de administración de usuarios"];
 			$usuarios = cargarUsuarios();
 			include 'vistas/admin_usuarios.php';
 		} else { //En caso de ser un usuario no administrador 0 (Usuario), se indicará un error.
-			echo "<script>alert('No puedes acceder, no eres administrador.');</script>"; 
+			echo "<script>alert('No puedes acceder, no eres administrador.');</script>"; // ERES UN USUARIO¡¡¡
 		}
 	} else { //En caso de que el rol no se haya mandado, se mostrara un error.
 		echo "<script>alert('No puedes acceder, no has iniciado sesión');</script>"; 

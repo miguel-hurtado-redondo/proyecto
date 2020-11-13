@@ -1,6 +1,7 @@
 <style>
 		@import url("../estilo/css.css");
 </style>
+<link rel="shortcut icon" type="image / x-icon" href="/proyecto/favicon.ico">
 
 <h1><?php echo $datos['titulo']; ?></h1>
 
