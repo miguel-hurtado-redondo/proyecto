@@ -14,13 +14,9 @@
 		<h1>Adiministrar Usuario</h1>
 		
 		<!-- formulario para actualizar usuario-->
-		<form name="actualizarEnBD" method="post" action="controlAdmin"> 
+		<form name="actualizarEnBD" method="post" action="controlAdmin"><br>
 		
 			<table>
-                    <a href='../index.php'><input type='button' name='vueltaIndex' value='Home'></a>
-					<a href='../index.php/admin_usuarios'><input type='button' name='vueltaAdminUsuarios' value='Administrar usuarios'></a>
-                    <input type="submit" name="actualizarEnBD" value="Actualizar">
-                    <br><br>
 				<tr>
 					<td>Id</td>
 					<td><input type="text" name="id" value="<?php echo $id ?>" readonly></td>
@@ -56,8 +52,13 @@
 					<?php } else { ?>
 					<td><input type="checkbox" name="rol" value="0"></td>
 					<?php } ?>
-				</tr>							
-			</table>
+				</tr>
+										
+			</table><br>
+			<a href='../index.php'><input type='button' name='vueltaIndex' value='Home'></a>
+					<a href='../index.php/admin_usuarios'><input type='button' name='vueltaAdminUsuarios' value='Administrar usuarios'></a>
+                    <input type="submit" name="actualizarEnBD" value="Actualizar">
+                    <br>
 		</form>
 	</body>
 </html>

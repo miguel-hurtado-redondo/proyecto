@@ -60,10 +60,10 @@ session_start(); ?>
     <article class="principal">
 
         <h1><?php echo $datos['titulo']; ?></h1>
-        <sectiona id=>
-            <p>Desde AUTOCASA queremos mostrarte algunas ideas de las que podrás disfrutar.<br><br>
+        <section id="ideasCabecera">
+            <p>Desde AUTOCASA queremos mostrarte algunas ideas de las que podrás disfrutar.<br>
                 Ideal para hacer en parejas, en familia, combinar con deportes de aventura y un gran abanico de posibilidades.<br><br>
-                A continuacion, te mostramos algunas ideas.<br><br>
+                A continuacion, te mostramos algunas ideas.<br>
                 <h3>¡¡¡Animate!!! Te esperan miles de kilometros y aventuras.</h3><br><br>
             </p>
         </section>
@@ -144,7 +144,7 @@ session_start(); ?>
 
     </article>
     <footer>
-
+    <p>© Copyright - 2020 Autocaravanas | Grupo Miguel Hurtado</p>
     </footer>
 </body>
 

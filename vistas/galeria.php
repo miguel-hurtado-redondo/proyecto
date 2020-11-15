@@ -54,7 +54,7 @@ session_start(); ?>
 		<h2 class="galeria">Ford 294TL</h2>
 		<br><br>
 		<div class="columnasGaleria">
-			<img src="../imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Modelo y Distribucion" width="120%"><br><br>
+			<img  class="fotoGaleria" src="../imagenes/autocaravana_294/composicion-caravana-kronos-294-tl.jpg" alt="Modelo y Distribucion" width="120%"><br><br>
 			<p>
 				<h3>INTERIOR</h3><br>
 				<span>matrimonio trasera:</span> 2160 x 1350 (1118)<br>
@@ -120,7 +120,7 @@ session_start(); ?>
 		<h2 class="galeria">Fiat 279M</h2>
 		<br><br>
 		<div class="columnasGaleria">
-			<img src="../imagenes/autocaravana_279_fiat/composicion-caravana-kronos-279m-fiat.jpg" alt="Modelo y Distribucion" width="120%"><br><br>
+			<img class="fotoGaleria" src="../imagenes/autocaravana_279_fiat/composicion-caravana-kronos-279m-fiat.jpg" alt="Modelo y Distribucion" width="120%"><br><br>
 			<p>
 				<h3>INTERIOR</h3>
 
@@ -205,7 +205,7 @@ session_start(); ?>
 	</script>
 
 	<footer>
-
+	<p>© Copyright - 2020 Autocaravanas | Grupo Miguel Hurtado</p>
 	</footer>
 
 </body>

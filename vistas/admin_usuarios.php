@@ -43,8 +43,8 @@
 				echo $usuario["rol"];
 			echo "</td>";?>
 			<td class="bot">
-				<a href="controlAdmin?eliminar&usuario=<?php echo $usuario['usuario']?>"><input type='button' name='eliminar' id='eliminar' value='Eliminar'></a>
-				<a href="controlAdmin?actualizar&id=<?php echo $usuario['id'] ?>&usuario=<?php echo $usuario['usuario']?>&nombre=<?php echo $usuario['nombre']?>&apellidos=<?php echo $usuario['apellidos']?>&email=<?php echo $usuario['email']?>&contrasena=<?php echo $usuario['contrasena']?>&rol=<?php echo $usuario['rol']?>"><input type='button' name='actualizar' id='actualizar' value='Actualizar'></a>
+				<a href="controlAdmin?eliminar&usuario=<?php echo $usuario['usuario']?>"><input type='button' name='eliminar' class='botonesTabla' value='Eliminar'></a>
+				<a href="controlAdmin?actualizar&id=<?php echo $usuario['id'] ?>&usuario=<?php echo $usuario['usuario']?>&nombre=<?php echo $usuario['nombre']?>&apellidos=<?php echo $usuario['apellidos']?>&email=<?php echo $usuario['email']?>&contrasena=<?php echo $usuario['contrasena']?>&rol=<?php echo $usuario['rol']?>"><input type='button' name='actualizar' class='botonesTabla' value='Actualizar'></a>
 			</td> 
 				<?php
 			echo "</td>";

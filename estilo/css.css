@@ -13,7 +13,6 @@ html{
 	
 }
 header {
-	
 	height: 20%;
 	width: 100%;
     background: rgba(255,255,255,1);
@@ -66,6 +65,8 @@ nav a{
 .botonesHom{
 	/* background-color: red; */
 	height: 7%;
+	position: relative;
+	z-index: 1;
 }
 .botonesHome{
 	position:relative ;
@@ -108,10 +109,9 @@ nav a{
 	width: 100%;
 }
 .contacto{
-	position: relative;
-	top: -7%;
+	
+	margin-top: -4.1%;
 	z-index: -1;
-
 	width: 88%;
 	height: 100%;
 	padding: 5px;
@@ -120,16 +120,28 @@ nav a{
 	background-color: #eee;
 
 }
+#enlaceContacto{
+	background-color: lawngreen;
+	z-index: 0;
+}
 span{
 	color: rgb(0, 102, 255);
 }
 .columnasGaleria{
-	column-count: 2 ;
+	-moz-column-count: 2; /* Para Firefox */
+    -webkit-column-count: 2; /* Para Opera, Chrome, Safari */
+    column-count: 2; /*Con esto lo que hacemos es crear dos coumnas */
+    text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+	/* column-count: 2 ; */
 	column-gap: 10%;
 	margin-left: 5%;
 }
 .columnas{	
-	column-count: 2 ;
+	-moz-column-count: 2; /* Para Firefox */
+    -webkit-column-count: 2; /* Para Opera, Chrome, Safari */
+    column-count: 2; /*Con esto lo que hacemos es crear dos coumnas */
+    text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+	
 	column-gap: 2%;
 	margin-top: 2%;
 	margin-left: 1%;
@@ -181,6 +193,7 @@ form{
     background-color: #96dae5 ;
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 4%;
+	margin-top: 5%;
 }
 
  h1,h2,h3{
@@ -190,7 +203,6 @@ form{
 }
 
 p{
-	
 	font-family: 'Raleway', sans-serif;
 }	
 a{
@@ -199,23 +211,25 @@ a{
 }
 
 form label{
-	width:130px;
+	width:35%;
 	font-weight:bold;
 	display:inline-block;
+	margin-left: 16%;
 }
 
 form input[type="text"], form input[type="password"], form input[type="email"]{
-	width:200px;
-	padding:3px 10px;
+	/* width:100%; */
+	padding:1% 0%;
 	border:1px solid #f6f6f6;
 	border-radius:3px;
 	background-color:#f6f6f6;
-	margin:8px 0;
+	margin:2% 0;
 	display:inline-block;
 }
-input[type="submit"], form input[type="submit"],form input[type="button"],a input[type="button"] {
+
+input[type="submit"], form input[type="submit"],form input[type="button"] {
 	width:30%;
-	padding:8px 8px;
+	padding:2% 7%;
 	margin-left: 33%;
 	margin-top:15px;
 	border:1px solid #d34712;
@@ -230,20 +244,24 @@ form input[type="submit"]:hover{
 	cursor:pointer;
 }
 
-/* input[type="button"]{
-
-    font-family: 'Raleway', sans-serif;
-	width:10%;
-	float: right;
-	padding:8px 8px;
+a input[type="button"]{
+	width:30%;
+	padding:2% 0%;
+	margin-left: 33%;
 	margin-top:15px;
-	border:1px solid #55767c;
+	border:1px solid #d34712;
 	border-radius:10px;
 	display:block;
-	color:#fff;
-    background-color:#55767c;
-    text-decoration: none;
-} */
+	color:#040562;
+	background-color:#eb825a;
+
+}
+td a input[type="button"]{
+	width: 100%;
+	margin: 25% 0%;
+	padding: 11% 0%;
+
+}
 
 table{
 	background-color:#3cc6e8;
@@ -259,7 +277,7 @@ td{
 }
 table td, table tr{
 
-    padding: 8px;
+    padding: 5px ;
 }
 table tr:nth-child(even){background-color: #96DAE5;}
 table tr:hover {background-color: #ddd;}
@@ -316,6 +334,11 @@ table tr:hover {background-color: #ddd;}
 	color: #e0a332;
 	margin-bottom: 4% ;
 }
+#ideasCabecera{
+	margin-top: 3%;
+	margin-left: 15%;
+	margin-right: 8%;
+}
 .sitios{
 	/* column-count: 2; */
 	/* float: left; */
@@ -353,6 +376,30 @@ table tr:hover {background-color: #ddd;}
 	/* float: left; */
 
 }
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 3%;
+	width: 100%;
+	text-align: center;
+	padding-top: 2%;
+	font-size: 20px;
+	font-family: cursive;
+	background: rgba(60,199,230,1);
+	background: -moz-linear-gradient(left, rgba(60,199,230,1) 0%, rgba(188,224,238,1) 53%, rgba(60,199,230,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(60,199,230,1)), color-stop(53%, rgba(188,224,238,1)), color-stop(100%, rgba(60,199,230,1)));
+	background: -webkit-linear-gradient(left, rgba(60,199,230,1) 0%, rgba(188,224,238,1) 53%, rgba(60,199,230,1) 100%);
+	background: -o-linear-gradient(left, rgba(60,199,230,1) 0%, rgba(188,224,238,1) 53%, rgba(60,199,230,1) 100%);
+	background: -ms-linear-gradient(left, rgba(60,199,230,1) 0%, rgba(188,224,238,1) 53%, rgba(60,199,230,1) 100%);
+	background: linear-gradient(to right, rgba(60,199,230,1) 0%, rgba(188,224,238,1) 53%, rgba(60,199,230,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cc7e6', endColorstr='#3cc7e6', GradientType=1 );
+	font-size: 10px;
+}
+footer p{
+	margin-top: -0.5%;
+}
+	
 /*
 #header tr {
     padding-top: 12px;
@@ -385,6 +432,7 @@ table tr:hover {background-color: #ddd;}
 } */
 @media screen and (max-width: 599px) {
     /* .textGroup {
+
         margin-top: 20px;
     }
     .imgSize {
@@ -394,14 +442,78 @@ table tr:hover {background-color: #ddd;}
         width: 60%;  
                
 	} */
-	.columnas{	
-		column-count: 1;
+	h1{
+		font-size: 19px;
+		text-align: center;
+		margin-top: 12%;
+	}	
+	h2 {
+		font-size: 17px;
 	}
-    .sitios {
-    -moz-column-count: 1; /* Para Firefox */
-    -webkit-column-count: 1; /* Para Opera, Chrome, Safari */
-    column-count: 1; /*Con esto lo que hacemos es crear dos coumnas */
-    text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+	h3{
+		font-size: 15px;
+	}
+	p{
+		font-size: 14px;
+	}
+	#logo{
+		position: absolute;
+		height: 15%;
+		width: auto;
+		margin: -2.5% 0 0 -1%; 
+			
+	}
+	header {
+		height: 10%;
+		width: 100%;
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(19%, rgba(255,255,255,1)), color-stop(24%, rgba(246,246,246,1)), color-stop(100%, rgba(60,198,232,1)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(246,246,246,1) 24%, rgba(60,198,232,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#3cc6e8', GradientType=1 );
+	}
+	.botonesHome{
+		font-size: 10px;
+		width: 25%;
+
+
+	}
+	nav li{
+		width: 11%;
+		padding: 0.8% 1%;
+	}
+	nav a{
+		font-size: 8px;
+	}
+	.columnas{	
+		-moz-column-count: 1; /* Para Firefox */
+		-webkit-column-count: 1; /* Para Opera, Chrome, Safari */
+		column-count: 1; /*Con esto lo que hacemos es crear dos coumnas */
+		text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+	}
+	.galeriabox{
+		margin-top: -10.5%;
+	}
+	.fotoGaleria{
+		width: 90%;
+
+	}
+	.columnasGaleria{
+		-moz-column-count: 1; /* Para Firefox */
+		-webkit-column-count: 1; /* Para Opera, Chrome, Safari */
+		column-count: 1; /*Con esto lo que hacemos es crear dos coumnas */
+		text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
+		column-gap: 10%;
+		margin-left: 5%;
+	}
+	.sitios {
+		-moz-column-count: 1; /* Para Firefox */
+		-webkit-column-count: 1; /* Para Opera, Chrome, Safari */
+		column-count: 1; /*Con esto lo que hacemos es crear dos coumnas */
+		text-align: center; /*Con esto acentramos tanto las fotos como el texto para que quede cenrado */
 	}
 	.imagenSitios{
 		height: 85%;
@@ -409,16 +521,16 @@ table tr:hover {background-color: #ddd;}
 		margin-left: -1%;
 		margin-top: 10%;
 		margin-bottom: 10%;
-	
-	}
-	
-	.textoSitios, .textoSitios1{
 		
+	}
+
+	.textoSitios, .textoSitios1{
+			
 		width: 90%;
 		text-align: justify;
 		margin-left: 6%;
 		margin-bottom: 10%;
-	
+		
 	}
 	iframe{
 		width: 319%;
@@ -438,9 +550,25 @@ table tr:hover {background-color: #ddd;}
 		box-sizing: border-box;
 		margin-left: 4%;
 		background-color: #eee;
-    /* .fotos{
-    height: auto;
-    } */
+		/* .fotos{
+		height: auto;
+		} */
+	}
+	input[type="submit"], form input[type="submit"],form input[type="button"] {
+		width: 50%;
+		margin-left: 22%;
+		font-size: 10px;
+	}
+	.principal{
+		margin-top: -10.3%;
+	}
+	.iconos{
+		width: 8%;
+	}
+	footer p{
+		margin-top: 0%;
+		font-size: 10px;
+	}
 }
 @media screen and (min-width: 600px) {
 

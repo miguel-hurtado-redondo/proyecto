@@ -88,7 +88,7 @@ session_start(); ?>
 
 	</section>
 	<footer>
-
+	<p>© Copyright - 2020 Autocaravanas | Grupo Miguel Hurtado</p>
 	</footer>
 </body>
 
